@@ -9,6 +9,6 @@ val.push(function(){
     console.log("i m software")
 })
 
-//console.log(val);
+console.log(val[0]);
 
 val[5]();
