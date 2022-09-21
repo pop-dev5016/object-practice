@@ -18,7 +18,7 @@ console.log(friends1);
 console.log(friends2);
 friends1.work();
 console.log(friends1.cgpa);  
-console.log(friends1.work());  
+//console.log(friends1.work());  
 
 
 

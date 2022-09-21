@@ -1,9 +1,9 @@
-// let geeet = function(){
-//     console.log("im pop")
-//     return 1000
-// }
+let geeet = function(){
+    console.log("im pop")
+    return 1000
+}
 
-// console.log(geeet())
+console.log(geeet())
 
 
 // //arroe
@@ -17,12 +17,12 @@
 
 //par local variable
 
-// let greet3 = function(user){
-//     console.log("rosh "+user)
-//     return 9
-// }
+let greet3 = function(user){
+    console.log("rosh "+user)
+    return 9
+}
 
-// console.log(greet3("love pop"))
+console.log(greet3("love pop"))
 
 
 // let greet3 = (user) =>{
@@ -51,7 +51,7 @@
 
 
 
-let prem = (a,b) => -(a+b);
-let pop = prem
-let result = pop(13,13)
-console.log(result)
+// let prem = (a,b) => -(a+b);
+// let pop = prem
+// let result = pop(13,13)
+// console.log(result)

@@ -1,12 +1,12 @@
-// let nums = [5,2,3,4,2]
+// let nums = [5,2,3,4,7]
 // console.log(nums);
 
-// // let [a,b,c,d] = nums;
+// // let [a,b,c,d,e] = nums;
 // // console.log(d);
 
 
-// let [a,b,,d] = nums;
-// console.log(d);
+// let [a,b,,e] = nums;
+// console.log(e);
 
 
 // let num1 = 2;
@@ -20,6 +20,6 @@
 // let word = "my name is pop born unlucky".split(" ")
 // console.log(word)
 
-let word = "my name is pop born unlucky is my life".split(" ")
-let [a,b,c,d,...f]= word
-console.log(f)
+// let word = "my name is pop born unlucky is my life".split(" ")
+// let [a,b,c,d,...f]= word
+// console.log(f)
