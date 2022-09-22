@@ -5,6 +5,7 @@ class Pizza{
         this.size=pizzasize;
         this.crust = "original";
         this.type=pizztype;
+        this.topping=[]
     }
     getcrust(){
         return this.crust
@@ -12,6 +13,16 @@ class Pizza{
     setcrust(piccacrust){
         this.crust = piccacrust;
     }
+    getTopping(){
+        return this.topping
+    }
+    settopping(top){
+        this.topping.push(top)
+    }
+
+
+
+
     bake(){
         console.log(`baking a ${this.size} ${this.crust} ${this.type} crust pizza.`)
 
@@ -23,3 +34,7 @@ myPizza.type="supereme";///dont use this way
 myPizza.setcrust("thin")
 myPizza.bake();
 console.log(myPizza.getcrust());
+myPizza.settopping("sausagae")
+myPizza.settopping("thin") 
+myPizza.settopping("thick")
+console.log(myPizza.getTopping());
