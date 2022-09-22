@@ -48,9 +48,13 @@
 /////////////////////////public and private property
 
 class Pizza{
+
+        crust = "original";//public
+        #sause = "traditiona "///work only above the constructor
+        #size
         constructor(pizzasize){
-            this.size=pizzasize;
-            this.crust = "original";
+            this.#size=pizzasize;
+            
         }
         getcrust(){
             return this.crust
@@ -58,4 +62,13 @@ class Pizza{
         setcrust(piccacrust){
             this.crust = piccacrust;
         }
+        pop(){
+            console.log(`here is your ${this.crust} ${this.#sause} sause ${this.#size} pizza`);
+        }
     }
+
+    let vii = new Pizza("large")
+    //vii.pop()
+   console.log(vii.crust); //public
+   console.log(vii.getcrust()); ///public
+   console.log(vii.sauce);
