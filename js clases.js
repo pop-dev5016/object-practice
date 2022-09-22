@@ -6,10 +6,10 @@ class Pizza{
         this.crust = "original";
         this.type=pizztype;
     }
-    get piccacrust(){
+    getcrust(){
         return this.crust
     }
-    set piccacrust(piccacrust){
+    setcrust(piccacrust){
         this.crust = piccacrust;
     }
     bake(){
@@ -20,6 +20,6 @@ class Pizza{
 
 const myPizza = new Pizza("chicken kari","10 meter width")
 myPizza.type="supereme";///dont use this way
-myPizza.piccacrust = "sausage"
+myPizza.setcrust("thin")
 myPizza.bake();
-console.log(myPizza.piccacrust);
+console.log(myPizza.getcrust());
