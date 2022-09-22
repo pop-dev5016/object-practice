@@ -1,40 +1,61 @@
-//js class
+// //js class
+
+// class Pizza{////////////parent classs
+//     constructor(pizzasize){
+//         this.size=pizzasize;
+//         this.crust = "original";
+//     }
+//     getcrust(){
+//         return this.crust
+//     }
+//     setcrust(piccacrust){
+//         this.crust = piccacrust;
+//     }
+// }
+
+// class sauce extends Pizza{///////chuld
+//     constructor(pizzasie){
+//         super(pizzasie);
+//         this.type = "the work";
+
+//     }
+//     slice(){
+//         console.log(`our  ${this.type} ${this.size} pizza has 12 slices`);
+//     }
+// }
+
+// const mytea = new sauce("medium")
+// mytea.slice()
+
+
+////////////////////////////factory function
+
+// function pizzafactory(pizzasize){
+//     const crust = "original";
+//     const size = pizzasize
+//     return {             ////return vachi use pannala this word illama
+//         bake:()=>{
+//             console.log(`baking a ${size} ${crust} crust pizza`)
+//         }
+//     }
+
+// }
+
+// const mypizza = pizzafactory("small")
+// mypizza.bake();
+
+
+/////////////////////////public and private property
 
 class Pizza{
-    constructor(pizztype,pizzasize){
-        this.size=pizzasize;
-        this.crust = "original";
-        this.type=pizztype;
-        this.topping=[]
+        constructor(pizzasize){
+            this.size=pizzasize;
+            this.crust = "original";
+        }
+        getcrust(){
+            return this.crust
+        }
+        setcrust(piccacrust){
+            this.crust = piccacrust;
+        }
     }
-    getcrust(){
-        return this.crust
-    }
-    setcrust(piccacrust){
-        this.crust = piccacrust;
-    }
-    getTopping(){
-        return this.topping
-    }
-    settopping(top){
-        this.topping.push(top)
-    }
-
-
-
-
-    bake(){
-        console.log(`baking a ${this.size} ${this.crust} ${this.type} crust pizza.`)
-
-    }
-}
-
-const myPizza = new Pizza("chicken kari","10 meter width")
-myPizza.type="supereme";///dont use this way
-myPizza.setcrust("thin")
-myPizza.bake();
-console.log(myPizza.getcrust());
-myPizza.settopping("sausagae")
-myPizza.settopping("thin") 
-myPizza.settopping("thick")
-console.log(myPizza.getTopping());
